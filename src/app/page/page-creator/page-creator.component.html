@@ -1,0 +1,5 @@
+<form>
+	<p>Page {{ this.pageNumber }}</p>
+	<input type="text" placeholder="Image URI" #image />
+	<button [disabled]="image.value === ''" (click)="save()">Save page</button>
+</form>

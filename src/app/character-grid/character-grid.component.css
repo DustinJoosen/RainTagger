@@ -1,0 +1,18 @@
+div {
+	width: 100%;
+}
+
+#character-grid {
+	width: 900px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+app-character {
+	margin: 8px;
+	cursor: pointer;
+}
+app-character.disabled {
+	background-color: #ccc;
+	opacity: 0.7;
+}

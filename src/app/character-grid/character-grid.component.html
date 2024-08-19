@@ -1,0 +1,9 @@
+<div id="character-grid">
+	<app-character
+		*ngFor="let char of this.characters"
+		[name]="char"
+		[class.disabled]="!characterIncluded(char)"
+		(click)="toggleCharacter(char)"
+	></app-character>
+</div>
+
